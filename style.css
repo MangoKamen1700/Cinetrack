@@ -1,0 +1,895 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #1e293b;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid #e2e8f0;
+    background-color: #0ea5a4;
+}
+
+nav h2 {
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ccfbf1;
+}
+
+/* CONTAINER (INDENT LEFT & RIGHT LIKE ANILIST) */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 60px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    font-weight: 600;
+}
+
+.section-header a {
+    text-decoration: none;
+    color: #0ea5a4;
+}
+
+/* GRID 6 ITEMS */
+.grid-six {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    cursor: pointer;
+}
+
+.poster {
+    width: 100%;
+    height: 250px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+.poster.movie1 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(Arcane.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie2 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(Alice%20in%20Borderland.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie3 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(The%20Last%20of%20Us.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie4 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(Invincible.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie5 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(Flow.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie6 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(kpop.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie7 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(scream.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie8 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(wuthering.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie9 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(marty.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie10 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(hamnet.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie11 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(sinners.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie12 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(housemaid.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie13 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(supernatural.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie14 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(simpsons.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie15 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(family.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie16 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(stranger.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie17 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(jujutsu.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie18 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(thrones.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie19 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(silent.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie20 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(goat.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie21 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(mercy.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie22 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(hoppers.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie23 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(spongebob.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie24 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(anaconda.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie25 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(monarch.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie26 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(darwin.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie27 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(knight.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie28 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(frieren.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie29 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(paradise.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie30 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(hell.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie31 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(yourname.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie32 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(endgame.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie33 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(penguin.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie34 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(spiderman.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie35 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(pacific.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie36 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(bocchi.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie37 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(squid.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie38 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(vinland.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.poster.movie39 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-image: url(regular.webp);
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.card p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+/* ========================= */
+/* CLEAN WHITE FILTER STYLE  */
+/* ========================= */
+
+.filter-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.filter-container {
+    max-width: 1200px;   
+    margin: 0 auto;    
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    flex-wrap: nowrap;   
+    justify-content: space-between; 
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-item label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+}
+
+/* Input & Select */
+.filter-item input,
+.filter-item select {
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+}
+
+/* Custom dropdown arrow */
+.filter-item select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%231e293b' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+/* Focus Effect */
+.filter-item input:focus,
+.filter-item select:focus {
+    outline: none;
+    border-color: #0ea5a4;
+    background-color: #ffffff;
+}
+
+/* ========================= */
+/* ANILIST STYLE ARCANE PAGE */
+/* ========================= */
+
+.banner {
+    width: 100%;
+    height: 500px; /* increase height so the banner looks proper */
+    background-image: url(banner.webp); /* your banner */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.6)
+    );
+}
+
+/* Media wrapper: move poster/card down so it overlaps nicely */
+.media-wrapper {
+    max-width: 1100px;
+    margin: -150px auto 60px auto; /* negative margin makes it overlap */
+    padding: 0 20px;
+}
+
+.media-content {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.media-poster {
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.media-right h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sub-info {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.rating-section,
+.status-section {
+    margin-bottom: 15px;
+}
+
+.rating-section select,
+.status-section select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    background-color: #f1f5f9;
+}
+
+.description {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* CHARACTER SECTION */
+/* ========================= */
+
+.character-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.character-card {
+    display: flex;
+    justify-content: space-between; /* LEFT vs RIGHT alignment */
+    align-items: center;
+    background: #f8fafc;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* Character side */
+.char-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Character picture */
+.char-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Character name */
+.char-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+/* Voice actor side */
+.va-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Voice actor picture */
+.va-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Voice actor name */
+.va-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* ========================= */
+/* MY LIST PAGE STYLING */
+/* ========================= */
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 40px; /* space between My List and the sections */
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0ea5a4;
+}
+
+.grid-six {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.poster {
+    width: 100%;
+    height: 250px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.poster:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.status-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Hide the checkbox */
+.status-toggle {
+    display: none;
+}
+
+/* Style the "Add to List" button */
+.status-button {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: #0ea5a4;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    width: fit-content;
+}
+
+/* Style the dropdown */
+.status-dropdown {
+    display: none; /* hidden by default */
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    background-color: #f1f5f9;
+    width: 150px;
+    margin-top: 5px;
+}
+
+/* Show dropdown when checkbox is checked */
+.status-toggle:checked + .status-button + .status-dropdown {
+    display: block;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE FIXES   */
+/* ========================= */
+@media (max-width: 768px) {
+
+    /* General container & nav adjustments */
+    .container {
+        padding: 20px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    /* Grid adjustments */
+    .grid-six {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    /* Poster adjustments */
+    .poster {
+        height: 180px;
+    }
+
+    /* Filter section adjustments */
+    .filter-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .filter-item input,
+    .filter-item select {
+        width: 100%;
+    }
+
+    /* Arcane / media page adjustments */
+    .media-wrapper {
+        margin: -100px auto 40px auto; /* less negative to fit smaller screens */
+        padding: 0 15px;
+    }
+
+    .media-content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .media-poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .media-right h1 {
+        font-size: 24px;
+    }
+
+    .rating-section select,
+    .status-section select {
+        width: 100%;
+    }
+
+    /* Character cards adjustments */
+    .character-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .va-side {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+}
